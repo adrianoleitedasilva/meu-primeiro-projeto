@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
+import { Component, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-title',
@@ -6,7 +6,7 @@ import { Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@
   styleUrls: ['./title.component.scss']
 })
 export class TitleComponent implements OnInit, OnChanges, OnDestroy{
-  @Input() public title: string = "Olá Componentes";
+  public title: string = "Olá Componentes";
 
   ngOnInit(): void {  }
 
@@ -17,4 +17,5 @@ export class TitleComponent implements OnInit, OnChanges, OnDestroy{
   ngOnDestroy(): void {
       console.log("Componente foi destruído!")
   }
+
 }
